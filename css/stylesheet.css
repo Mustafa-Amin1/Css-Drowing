@@ -47,6 +47,11 @@ header .face .eyes-and-nose{
     height: 25px;
     margin: auto;
 }
+header .face .eyes-and-nose .eyes{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+}
 header .face .eyes-and-nose .eye{
     width: 4px;
     height: 27px;
@@ -96,10 +101,12 @@ header .face .eyes-and-nose .eye .eye-look{
 header .face .eyes-and-nose #eye-right{
 border-bottom-right-radius: 9px ;
 z-index: 500;
+flex: 0 0 50%;
 }
 header .face .eyes-and-nose #eye-left{
     border-bottom-left-radius: 9px ;
     z-index: 500;
+    flex: 0 0 50%;
 }
 header .face .eyes-and-nose #nose{
     width: 8px;
@@ -127,7 +134,7 @@ header .face .features{
     height: 35px;
     margin: auto;
     position: absolute;
-    top: 19px;
+    top: 20px;
     right: 7px;
     background-color: var(--second-color);
     z-index: 10;
@@ -305,7 +312,7 @@ section #body .arm__left{
 section #body .arm__right{
     position: absolute;
     top: 7px;
-    right: -4px;
+    right: -3px;
     z-index: -1;
     transform-origin: top;
     transform: rotate(310deg);
@@ -403,7 +410,7 @@ section #body .right__leg{
 @keyframes arms-move-right{
     0%{
         top: 7px;
-        right: -4px;
+        right: -3px;
         z-index: -1;
         transform-origin: top;
         transform: rotate(310deg);
@@ -438,10 +445,9 @@ section #body .right__leg{
                 top: 8px;
             right: -2px;
     }
-
     60%{
         top: 7px;
-        right: -4px;
+        right: -3px;
         z-index: -1;
         transform-origin: top;
         transform: rotate(310deg);
